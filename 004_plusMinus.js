@@ -95,6 +95,9 @@ function plusMinus5(arr) {
     : zero++ 
   })
 
+  // toPrecesion(6) >> the whole length of the number is 6, first 0 does not count
+  // toFixed(6) >> length after the floating point
+  // 18.0000 vs 18.000000
   console.log("Minus5:", (minus / total).toPrecision(6))
   console.log("Plus5:", (plus / total).toPrecision(6))
   console.log("Zero5:", (zero / total).toPrecision(6))

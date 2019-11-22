@@ -38,7 +38,6 @@ function diagonalDifference(arr) {
   }
 
   return Math.abs(sum)
-
 }
 
 console.log(diagonalDifference(arr))

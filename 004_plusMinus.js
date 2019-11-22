@@ -104,3 +104,17 @@ function plusMinus5(arr) {
 }
 
 plusMinus5(arr)
+
+// ver6
+function plusMinus6(arr) {
+  let minus = 0, plus = 0, zero = 0
+  const total = arr.length
+
+  arr.map(element => {
+    element ? element < 0 ? minus++ : plus++ : zero++ 
+  })
+
+  console.log(`Plus6: ${(plus/total).toPrecision(6)}\nMinus6: ${(minus/total).toPrecision(6)}\nZero6: ${(zero/total).toPrecision(6)}`)
+}
+
+plusMinus6(arr)

@@ -65,9 +65,9 @@ function plusMinus4(arr) {
   let minus = 0, plus = 0, zero = 0
   const total = arr.length
 
-  arr.map(element => {
-    if (element < 0) minus++
-    else if (element > 0) plus++
+  arr.map(number => {
+    if (number < 0) minus++
+    else if (number > 0) plus++
     else zero++
   })
 
@@ -77,7 +77,7 @@ function plusMinus4(arr) {
 
   return `Minus4: ${fractionOFMinus}\nPLus4: ${fractionOFPlus}\nZero4: ${fractionOFZero}`
   // return [fractionOFMinus, fractionOFPlus, fractionOFZero]
-  // just returns the first...
+  // wierd but for me just returns the first...
   // return fractionOFMinus, fractionOFPlus, fractionOFZero
 }
 
@@ -88,10 +88,10 @@ function plusMinus5(arr) {
   let minus = 0, plus = 0, zero = 0
   const total = arr.length
 
-  arr.map(element => {
-    element
+  arr.map(number => {
+    number
     // (parenthesis) is not necessary in the next line
-    ? (element < 0 ? minus++ : plus++)
+    ? (number < 0 ? minus++ : plus++)
     : zero++ 
   })
 
@@ -110,8 +110,8 @@ function plusMinus6(arr) {
   let minus = 0, plus = 0, zero = 0
   const total = arr.length
 
-  arr.map(element => {
-    element ? element < 0 ? minus++ : plus++ : zero++ 
+  arr.map(number => {
+    number ? number < 0 ? minus++ : plus++ : zero++ 
   })
 
   console.log(`Plus6: ${(plus/total).toPrecision(6)}\nMinus6: ${(minus/total).toPrecision(6)}\nZero6: ${(zero/total).toPrecision(6)}`)

@@ -12,8 +12,8 @@ function plusMinus(arr) {
   // map method is faster! 
   // arr.forEach(element => {
   arr.map(element => {
-    if (element > 0) { minus.push(element) }
-    else if (element < 0) { plus.push(element) }
+    if (element > 0) { plus.push(element) }
+    else if (element < 0) { minus.push(element) }
     else { zero.push(element) }
   })
 
@@ -30,8 +30,8 @@ function plusMinus2(arr) {
   const total = arr.length
 
   arr.map(element => {
-    if (element > 0) minus.push(element)
-    else if (element < 0) plus.push(element)
+    if (element > 0) plus.push(element)
+    else if (element < 0) minus.push(element)
     else zero.push(element)
   })
 
@@ -48,8 +48,8 @@ function plusMinus3(arr) {
   const total = arr.length || 0
 
   arr.map(element => {
-    if (element > 0) minus++
-    else if (element < 0) plus++
+    if (element > 0) plus++
+    else if (element < 0) minus++
     else zero++
   })
 

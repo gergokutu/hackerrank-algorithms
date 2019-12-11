@@ -19,4 +19,4 @@ function compareTriplets(a, b) {
   return result 
 }
 
-console.log('check:', compareTriplets(a, b))
+console.log('Result of the comparison:', compareTriplets(a, b))

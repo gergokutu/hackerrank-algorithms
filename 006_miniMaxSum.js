@@ -28,6 +28,7 @@ function miniMaxSum(arr) {
   // const maxArray = arr.slice(1, arr.length)
   // const maxSum = maxArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
+  // format >> 10 14
   // console.log(`${minSum} ${maxSum}`)
 }
 

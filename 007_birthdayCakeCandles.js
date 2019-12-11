@@ -12,7 +12,7 @@ function birthdayCakeCandles(ar) {
   //   }})
   // return result.length
 
-  // long version >> right synthax
+  // long version >> another synthax
   // const result = ar.filter(highestNumber => {
   // return (highestNumber === max)
   // })

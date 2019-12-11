@@ -1,4 +1,4 @@
-const s = "12:40:22AM" // expected output: 19:05:45
+const s = "07:05:45PM" // expected output: 19:05:45
 // get rid of am/pm
 // AM >> same
 // PM >> +12

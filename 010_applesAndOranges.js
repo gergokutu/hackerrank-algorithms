@@ -10,11 +10,15 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
   let orangeCount = 0
   
   apples.map(apple => {
-    if (a + apple >= s && a + apple <= t) appleCount++
+    const appleFromTree = a + apple
+
+    if (appleFromTree >= s && appleFromTree <= t) appleCount++
   })
 
   oranges.map(orange => {
-    if (b + orange >= s && b + orange <= t) orangeCount++
+    const orangeFromTree = b + orange
+    
+    if (orangeFromTree >= s && orangeFromTree <= t) orangeCount++
   })
 
   console.log(`${appleCount}\n${orangeCount}`)

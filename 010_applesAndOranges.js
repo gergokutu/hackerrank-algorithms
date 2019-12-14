@@ -17,8 +17,7 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     if (b + orange >= s && b + orange <= t) orangeCount++
   })
 
-  console.log('Number of apples:', appleCount)
-  console.log('number of oranges:', orangeCount)
+  console.log(`${appleCount}\n${orangeCount}`)
 }
 
 countApplesAndOranges(s, t, a, b, apples, oranges)

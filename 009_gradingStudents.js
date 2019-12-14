@@ -1,7 +1,7 @@
 const grades = [73, 67, 38, 33]
 
 function gradingStudents(grades) {
-  // ver 6 - with ternary refactored
+  // ver 7 - with ternary refactored
   return grades.map(grade => grade > 37 && grade % 5 > 2 ? grade - grade % 5 + 5 : grade)
 
   // ver 6 - with ternary

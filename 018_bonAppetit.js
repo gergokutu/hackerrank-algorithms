@@ -4,11 +4,11 @@ const b = 12
 
 function bonAppetit(bill, k, b) {
   // ver2 >> refactored
-  const charged = (bill.reduce((accumulator, currentValue) => accumulator + currentValue) - bill[k]) / 2
+  const charged = (bill.reduce((accumulator, currentValue) => accumulator + currentValue, 0) - bill[k]) / 2
   b === charged ? console.log('Bon Appetit') : console.log(b - charged)
 
   // ver1
-  // const total = bill.reduce((accumulator, currentValue) => accumulator + currentValue)
+  // const total = bill.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
   // const charged = (total - bill[k]) / 2
 
   // if (b === charged) {

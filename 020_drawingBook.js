@@ -42,12 +42,12 @@
 
 // ver4
 function pageCount(numberOfPages, pageToTurn) {
-  const frontFlip = Math.floor(pageToTurn/2)
-  const backFlip = Math.floor((numberOfPages/2)-frontFlip)
+  const frontFlip = Math.floor(p/2)
+  const backFlip = Math.floor((n/2)-frontFlip)
   
   return frontFlip < backFlip ? frontFlip : backFlip
 }
 
-const n = 10
-const p = 9
+const n = 11
+const p = 10
 console.log(pageCount(n, p))
